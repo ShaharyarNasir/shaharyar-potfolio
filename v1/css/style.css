@@ -1073,15 +1073,16 @@ footer.footer {
   }
 }
 
-/* @media (max-width: 1080px) {
+@media (max-width: 1080px) {
   main.main {
-    padding: 0px 100px;
+    padding: 0px 25px;
+    overflow-x: hidden;
   }
 
   .about .about__text {
     width: 100%;
   }
-} */
+}
 
 @media (max-width: 480px) and (min-height: 700px) {
   .home-modifier {
