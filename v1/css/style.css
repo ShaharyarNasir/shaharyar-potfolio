@@ -996,6 +996,7 @@ footer.footer {
 
   body {
     font-size: var(--fz-lg);
+    overflow-x: hidden;
   }
   section {
     padding: 60px 0px;
@@ -1072,7 +1073,7 @@ footer.footer {
   }
 }
 
-@media (max-width: 1080px) {
+/* @media (max-width: 1080px) {
   main.main {
     padding: 0px 100px;
   }
@@ -1080,7 +1081,7 @@ footer.footer {
   .about .about__text {
     width: 100%;
   }
-}
+} */
 
 @media (max-width: 480px) and (min-height: 700px) {
   .home-modifier {
