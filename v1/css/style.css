@@ -160,7 +160,7 @@ p > a,
 .contact-btn,
 .project .project__type,
 .contact__title {
-  color: var(--blue);
+  color: var(--light-slate-blue);
 }
 
 .logo {
@@ -994,6 +994,9 @@ footer.footer {
     padding: 0px 25px;
   }
 
+  .container {
+    padding: 0;
+  }
   body {
     font-size: var(--fz-lg);
     overflow-x: hidden;
@@ -1040,10 +1043,13 @@ footer.footer {
     filter: grayscale(0%) contrast(1);
     transition: var(--transition);
   }
+  .work-experience {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
-  main.main {
+  main {
     padding: 0px 50px;
   }
 
@@ -1074,7 +1080,7 @@ footer.footer {
 }
 
 @media (max-width: 1080px) {
-  main.main {
+  main {
     padding: 0px 25px;
     overflow-x: hidden;
   }
