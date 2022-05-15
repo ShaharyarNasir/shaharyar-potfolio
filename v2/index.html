@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Shaharyar Nasir is a experiend Front-end Developer with latest web technologies."
+    />
+    <meta property="og:title" content="Shaharyar Nasir" />
+    <meta
+      property="og:description"
+      content="Shaharyar Nasir is a experiend Front-end Developer with latest web technologies"
+    />
+    <meta property="og:url" content="http://shaharyar.tech/" />
+    <meta property="og:type" content="website" data-react-helmet="true" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="theme-color" content="#5952d1" />
+    <title>Shaharyar | Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+  </head>
+
+  <body>
+    <div class="cursor-body">
+      <main class="main">
+        <nav class="navbar flex">
+          <div class="logo">
+            <!-- <a href="#home">
+                    <img src="./" alt="Shaharyar portfolio">
+                </a> -->
+            <a href="#home"> Shah. </a>
+          </div>
+          <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <ul class="menu">
+              <li><a href="#about" class="link cursor-hover-item">About</a></li>
+              <li><a href="#work" class="link cursor-hover-item">Work</a></li>
+              <li>
+                <a href="#experience" class="link cursor-hover-item"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="link cursor-hover-item">Contact</a>
+              </li>
+              <li class="resume-btn">
+                <a href="./assets/s-resume.pdf" class="cursor-hover-item" download>Resume</a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+        <div id="main-content">
+          <section id="home" class="home home-modifier">
+            <div>
+              <p class="home__intro cursor-hover-item">Hey!</p>
+            </div>
+            <div>
+              <h1 class="title">M. Shaharyar Nasir</h1>
+            </div>
+            <div>
+              <h2 class="title cursor-hover-item">
+                I convert your idea into reality.
+              </h2>
+            </div>
+            <div>
+              <p class="head__summary">
+                I'm Experienced
+                <a href="" class="link cursor-hover-item">Frontend Developer</a>
+                with strong engineering background with a Bachelor
+                degree in Bachelor of Business Administration.
+              </p>
+            </div>
+            <div>
+              <!-- <a href="#" class="contact-btn cursor-hover-item">Contact Now</a> -->
+              <div class="btn-wrapper">
+                <button onclick="location.href='mailto:m.shaharyarnasir@gmail.com'" type="button" class="button cursor-hover-item">
+                  <span class="default">Contact Now</span>
+                  <span class="success">Thanks for waiting</span>
+                  <div class="left"></div>
+                  <div class="right"></div>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section id="about" class="about">
+            <h2 class="section__title cursor-hover-item">About Me</h2>
+            <div class="about-content">
+              <div>
+                  <p>
+                    I'm experienced Frontend Developer with a demonstrated
+                    history of work in the software industry with a Bachelor
+                    degree in Bachelor of Business Administration (BBA) major in
+                    Supply Chain Management from National University of Modern
+                    Languages (NUML).
+                  </p>
+                  <!-- <a href="#" class="link cursor-hover-item"> consectetur</a>,
+                  adipisicing elit.
+                  <a href="#" class="link cursor-hover-item">Repudiandae</a>,
+                  aliquid. -->
+                  <p>
+                    I've worked on number of projects with different companies
+                    including <a href="#" class="link cursor-hover-item"> Consultant</a>, Real Estates, <a href="#" class="link cursor-hover-item"> Journal Publisher</a> and
+                    <a href="#" class="link cursor-hover-item"> E-commerce</a>.
+                  </p>
+                  <p>Some of the skills that I have are:</p>
+                <ul class="tools-skills">
+                  <li>HTML5 & CSS3</li>
+                  <li>Tailwind & Sass</li>
+                  <li>JavaScript & jQuery.</li>
+                  <li>WordPress & Shopify</li>
+                  <li>Adobe Illustrator </li>
+                  <li>Adobe Photoshop</li>
+                  <li>Figma & Adobe XD</li>
+                  <li>Team Management</li>
+                  <li>Time Management</li>
+                  <li>Project Management</li>
+                </ul>
+            </div>
+            <div class="about-img about-img-modifier">
+              <div class="wrapper">
+                <img class="img cursor-hover-item" src="./assets/me.jpg" />
+              </div>
+            </div>
+          </section>
+
+          <section id="work" class="work">
+            <div class="container">
+              <h2 class="section__title cursor-hover-item">
+                Some Things I've Built
+              </h2>
+              <div class="projects">
+                <div class="project project-modifier">
+                  <div class="project__img">
+                    <div class="wrapper">
+                      <img
+                        class="img cursor-hover-item"
+                        src="./assets/img-1.jfif"
+                        alt=""
+                        class="Project__thumbnail"
+                      />
+                    </div>
+                  </div>
+                  <div class="poject__text">
+                    <p class="project__type">Featured project</p>
+                    <h3 class="project__title cursor-hover-item">
+                      <a href=""> Project one</a>
+                    </h3>
+                    <div class="project__summary">
+                      <p class="project__summary__text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Sunt sed molestias voluptatum
+                        <a href="" class="link cursor-hover-item">laudantium</a>
+                        .
+                      </p>
+                    </div>
+                    <ul class="project__tools">
+                      <li class="tool">Vs code</li>
+                      <li class="tool">Code</li>
+                      <li class="tool">Word</li>
+                      <li class="tool">Excell</li>
+                      <li class="tool">React</li>
+                    </ul>
+                    <div class="project-links">
+                      <a
+                        href="#"
+                        aria-label="GitHub"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="cursor-hover-item"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <title>GitHub</title>
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        aria-label="External"
+                        class="external"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="cursor-hover-item"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-external-link"
+                        >
+                          <title>External Link</title>
+                          <path
+                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                          ></path>
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project project-modifier">
+                  <div class="poject__text">
+                    <p class="project__type">Featured project</p>
+                    <h3 class="project__title cursor-hover-item">
+                      <a href="">Project one</a>
+                    </h3>
+                    <div class="project__summary">
+                      <p class="project__summary__text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Sunt sed molestias voluptatum
+                        <a href="" class="link cursor-hover-item">laudantium</a>
+                        .
+                      </p>
+                    </div>
+                    <ul class="project__tools">
+                      <li class="tool">Vs code</li>
+                      <li class="tool">Code</li>
+                      <li class="tool">Word</li>
+                      <li class="tool">Excell</li>
+                      <li class="tool">React</li>
+                    </ul>
+                    <div class="project-links">
+                      <a
+                        href="#"
+                        aria-label="GitHub"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="cursor-hover-item"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github cursor-hover-item"
+                        >
+                          <title>GitHub</title>
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        aria-label="External"
+                        class="external"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="cursor-hover-item"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-external-link"
+                        >
+                          <title>External Link</title>
+                          <path
+                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                          ></path>
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="project__img">
+                    <div class="wrapper">
+                      <img
+                        class="img cursor-hover-item"
+                        src="./assets/img-2.jpg"
+                        alt=""
+                        class="Project__thumbnail"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project project-modifier">
+                  <div class="project__img">
+                    <div class="wrapper">
+                      <img
+                        class="img cursor-hover-item"
+                        src="./assets/img-1.jfif"
+                        alt=""
+                        class="Project__thumbnail"
+                      />
+                    </div>
+                  </div>
+                  <div class="poject__text">
+                    <p class="project__type">Featured project</p>
+                    <h3 class="project__title cursor-hover-item">
+                      <a href="">Project one</a>
+                    </h3>
+                    <div class="project__summary">
+                      <p class="project__summary__text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Sunt sed molestias voluptatum
+                        <a href="" class="link cursor-hover-item">laudantium</a>
+                        .
+                      </p>
+                    </div>
+                    <ul class="project__tools">
+                      <li class="tool">Vs code</li>
+                      <li class="tool">Code</li>
+                      <li class="tool">Word</li>
+                      <li class="tool">Excell</li>
+                      <li class="tool">React</li>
+                    </ul>
+                    <div class="project-links">
+                      <a
+                        href="#"
+                        aria-label="GitHub  "
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="cursor-hover-item"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <title>GitHub</title>
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        aria-label="External  "
+                        class="external"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="cursor-hover-item"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-external-link"
+                        >
+                          <title>External Link</title>
+                          <path
+                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                          ></path>
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="other-project">
+            <div class="container">
+              <h2 class="section__title cursor-hover-item">
+                Other Noteworthy Projects
+              </h2>
+              <a
+                class="inline-link archive-link cursor-hover-item"
+                href="/archive"
+                >view the archive</a
+              >
+              <ul class="projects-grid">
+                <li class="other-project_indiv">
+                  <div class="project-inner">
+                    <header>
+                      <div class="project-top">
+                        <div class="folder">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-folder"
+                          >
+                            <title>Folder</title>
+                            <path
+                              d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="project-links">
+                          <a
+                            href="#"
+                            aria-label="External  "
+                            class="external cursor-hover-item"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="cursor-hover-item"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              role="img"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-external-link"
+                            >
+                              <title>External Link</title>
+                              <path
+                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              ></path>
+                              <polyline points="15 3 21 3 21 9"></polyline>
+                              <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <h3 class="project-title cursor-hover-item">
+                        <a href="/" target="_blank" rel="noopener noreferrer">
+                          Integrating Project with WordPress & php
+                        </a>
+                      </h3>
+                      <div class="project-description">
+                        <p>
+                          Building a custom multisite compatible WordPress
+                          plugin to build global search
+                        </p>
+                      </div>
+                    </header>
+                    <footer>
+                      <ul class="project-tech-list">
+                        <li>Algolia</li>
+                        <li>WordPress</li>
+                        <li>PHP</li>
+                      </ul>
+                    </footer>
+                  </div>
+                </li>
+                <li class="other-project_indiv">
+                  <div class="project-inner">
+                    <header>
+                      <div class="project-top">
+                        <div class="folder">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-folder"
+                          >
+                            <title>Folder</title>
+                            <path
+                              d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="project-links">
+                          <a
+                            href="#"
+                            aria-label="External "
+                            class="external cursor-hover-item"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="cursor-hover-item"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              role="img"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-external-link"
+                            >
+                              <title>External Link</title>
+                              <path
+                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              ></path>
+                              <polyline points="15 3 21 3 21 9"></polyline>
+                              <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <h3 class="project-title cursor-hover-item">
+                        <a href="/" target="_blank" rel="noopener noreferrer">
+                          Integrating Project with WordPress & php
+                        </a>
+                      </h3>
+                      <div class="project-description">
+                        <p>
+                          Building a custom multisite compatible WordPress
+                          plugin to build global search
+                        </p>
+                      </div>
+                    </header>
+                    <footer>
+                      <ul class="project-tech-list">
+                        <li>Algolia</li>
+                        <li>WordPress</li>
+                        <li>PHP</li>
+                      </ul>
+                    </footer>
+                  </div>
+                </li>
+                <li class="other-project_indiv">
+                  <div class="project-inner">
+                    <header>
+                      <div class="project-top">
+                        <div class="folder">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-folder"
+                          >
+                            <title>Folder</title>
+                            <path
+                              d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="project-links">
+                          <a
+                            href="#"
+                            aria-label="External  "
+                            class="external cursor-hover-item"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="cursor-hover-item"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              role="img"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-external-link"
+                            >
+                              <title>External Link</title>
+                              <path
+                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                              ></path>
+                              <polyline points="15 3 21 3 21 9"></polyline>
+                              <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <h3 class="project-title cursor-hover-item">
+                        <a href="/" target="_blank" rel="noopener noreferrer">
+                          Integrating Project with WordPress & php
+                        </a>
+                      </h3>
+                      <div class="project-description">
+                        <p>
+                          Building a custom multisite compatible WordPress
+                          plugin to build global search
+                        </p>
+                      </div>
+                    </header>
+                    <footer>
+                      <ul class="project-tech-list">
+                        <li>Algolia</li>
+                        <li>WordPress</li>
+                        <li>PHP</li>
+                      </ul>
+                    </footer>
+                  </div>
+                </li>
+              </ul>
+              <button type="button" class="more-button cursor-hover-item">Show More</button>
+            </div>
+          </section>
+
+          <section id="experience" class="experience">
+            <div class="container">
+              <h2 class="section__title cursor-hover-item">My Experience</h2>
+              <div class="work-experience">
+                <div class="companies">
+                  <button
+                    id="tab-0"
+                    role="tab"
+                    tabindex="-1"
+                    aria-selected="false"
+                    aria-controls="panel-0"
+                    type="button"
+                    class="company-indiv cursor-hover-item"
+                  >
+                    <span>BrandFix 360</span>
+                  </button>
+                  <button
+                    id="tab-1"
+                    role="tab"
+                    tabindex="0"
+                    aria-selected="true"
+                    aria-controls="panel-1"
+                    type="button"
+                    class="company-indiv cursor-hover-item"
+                  >
+                    <span>AJIBP</span>
+                  </button>
+                  <button
+                    id="tab-2"
+                    role="tab"
+                    tabindex="-1"
+                    aria-selected="false"
+                    aria-controls="panel-2"
+                    type="button"
+                    class="company-indiv cursor-hover-item"
+                  >
+                    <span>Luist University</span>
+                  </button>
+                  <button
+                    id="tab-3"
+                    role="tab"
+                    tabindex="-1"
+                    aria-selected="false"
+                    aria-controls="panel-3"
+                    type="button"
+                    class="company-indiv cursor-hover-item"
+                  >
+                    <span>Internship.pk</span>
+                  </button>
+                  <button
+                    id="tab-4"
+                    role="tab"
+                    tabindex="-1"
+                    aria-selected="false"
+                    aria-controls="panel-4"
+                    type="button"
+                    class="company-indiv cursor-hover-item"
+                  >
+                    <span>PMBA</span>
+                  </button>
+                  <!-- <button id="tab-5" role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-5"
+                                class="company-indiv cursor-hover-item "><span>MullenLowe</span></button> -->
+                </div>
+                <div class="company">
+                  <div class="company-text">
+                    <h3>
+                      <span>Front-end Developer</span>
+                      <span class="company__name">
+                        &nbsp;@&nbsp;
+                        <a
+                          href="#"
+                          class="cursor-hover-item inline-link"
+                          data-cursor-text="Logistics consultant"
+                          data-cursor-text-repeat="2"
+                          >Keith Oliver</a
+                        >
+                      </span>
+                    </h3>
+                    <p class="company__date cursor-hover-item">
+                      Feb 2022, present
+                    </p>
+                    <ul class="work__todo">
+                      <li>
+                        Write modern, performant, maintainable code for a
+                        diverse array of client and internal projects
+                      </li>
+                      <li>
+                        Work with a variety of different languages, platforms,
+                        frameworks, and content management systems such as
+                        JavaScript, TypeScript, Gatsby, React, Craft, WordPress,
+                        Prismic, and Netlify
+                      </li>
+                      <li>
+                        Communicate with multi-disciplinary teams of engineers,
+                        designers, producers, and clients on a daily basis
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="skills">
+                        circuler animation for skills 
+                    </div> -->
+            </div>
+          </section>
+
+          <section id="contact" class="contact">
+            <div class="container">
+              <p class="overline cursor-hover-item">What's Next?</p>
+              <div class="contact-details">
+                <div class="contact-text">
+                  <h2 class="title cursor-hover-item">Get In Tought</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Debitis officia rerum, ut nisi inventore ipsam corporis
+                    libero distinctio voluptates mollitia consectetur nobis
+                    quibusdam accusamus fugit?
+                  </p>
+                  <!-- <a href="#" class="contact-btn cursor-hover-item"
+                    >Say Hello</a
+                  > -->
+                  <div class="btn-wrapper">
+                    <button  onclick="location.href='mailto:m.shaharyarnasir@gmail.com'" type="button"  class="button  cursor-hover-item">
+                      <span class="default">Contact Now</span>
+                      <span class="success">Thanks for waiting</span>
+                      <div class="left"></div>
+                      <div class="right"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <footer id="footer" class="footer">
+            <div class="container">
+              <div class="footer-text">
+                <p class="copyright__text">
+                  Designed & built by
+                  <a
+                    href="https://github.com/ShaharyarNasir/shaharyar-potfolio"
+                    class="link cursor-hover-item"
+                    data-cursor-text="Source Code "
+                    data-cursor-text-repeat="3"
+                  >
+                    shaharyar
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+          </footer>
+          <!-- <a class="link cursor-hover-item" href="#" data-cursor-text="shaharyar!" data-cursor-text-repeat="3">shaharyar</a> -->
+        </div>
+      </main>
+
+      <div class="cursor">
+        <div class="cursor--small"></div>
+        <div class="cursor--large"></div>
+        <div class="cursor--text">
+          <div class="text">Click Me!</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/cursor.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
