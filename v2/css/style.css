@@ -191,10 +191,9 @@ p > a,
   padding: 5px 14px;
 }
 
-.resume-btn a:link,
-a:visited {
-  padding: 0.2em 1em;
-  display: inline-block;
+.resume-btn {
+  display: block;
+  padding: 1em 2em;
   border: 2px solid var(--medium-slate-blue);
   border-radius: var(--border-radius);
 }
