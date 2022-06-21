@@ -216,7 +216,8 @@ section {
 section.home {
   padding: 100px 0px;
   margin: 0px auto;
-  max-width: 1000px;
+  /* max-width: 1000px; */
+  width: 100%;
 }
 
 .home-modifier {
