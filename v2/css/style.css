@@ -92,7 +92,9 @@ body {
 div {
   display: block;
 }
-
+.top-margin {
+  margin-top: 4em;
+}
 .flex {
   display: flex;
   -webkit-box-pack: justify;
@@ -778,7 +780,7 @@ footer p {
     font-size: var(--fz-lg);
   }
   .main {
-    padding: 0px 25px;
+    padding: 0px 10px;
   }
 
   .cursor {
