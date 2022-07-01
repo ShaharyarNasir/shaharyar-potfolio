@@ -32,52 +32,274 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+
+    <style>
+      .gatsby-image-wrapper {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .gatsby-image-wrapper img {
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        margin: 0;
+        max-width: none;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .gatsby-image-wrapper [data-main-image] {
+        opacity: 0;
+        transform: translateZ(0);
+        transition: opacity 0.25s linear;
+        will-change: opacity;
+      }
+
+      .gatsby-image-wrapper-constrained {
+        display: inline-block;
+      }
+    </style>
+
+    <script type="module">
+      const e =
+        "undefined" != typeof HTMLImageElement &&
+        "loading" in HTMLImageElement.prototype;
+      e &&
+        document.body.addEventListener(
+          "load",
+          function (e) {
+            if (void 0 === e.target.dataset.mainImage) return;
+            if (void 0 === e.target.dataset.gatsbyImageSsr) return;
+            const t = e.target;
+            let a = null,
+              n = t;
+            for (; null === a && n; )
+              void 0 !== n.parentNode.dataset.gatsbyImageWrapper &&
+                (a = n.parentNode),
+                (n = n.parentNode);
+            const o = a.querySelector("[data-placeholder-image]"),
+              r = new Image();
+            (r.src = t.currentSrc),
+              r
+                .decode()
+                .catch(() => {})
+                .then(() => {
+                  (t.style.opacity = 1),
+                    o &&
+                      ((o.style.opacity = 0),
+                      (o.style.transition = "opacity 500ms linear"));
+                });
+          },
+          !0
+        );
+    </script>
   </head>
 
   <body>
     <main class="main">
       <div class="cursor-body">
-        <header>
-          <nav class="navbar flex">
-            <div class="logo">
-              <!-- <a href="#home">
+        <div>
+          <header>
+            <nav class="navbar flex">
+              <div class="logo">
+                <!-- <a href="#home">
                     <img src="./" alt="Shaharyar portfolio">
                 </a> -->
-              <a href="#home"> Shah. </a>
-            </div>
-            <ul class="nav-links">
-              <input type="checkbox" id="checkbox_toggle" />
-              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-              <ul class="menu">
-                <li>
-                  <a href="#about" class="link cursor-hover-item">About</a>
-                </li>
-                <li><a href="#work" class="link cursor-hover-item">Work</a></li>
-                <li>
-                  <a href="#experience" class="link cursor-hover-item"
-                    >Experience</a
-                  >
-                </li>
-                <li>
-                  <a href="#contact" class="link cursor-hover-item">Contact</a>
-                </li>
-                <li class="resume-btn" class="link">
-                  <a
-                    href="./assets/s-resume.pdf"
-                    class="cursor-hover-item"
-                    download
-                    >Resume</a
-                  >
-                </li>
+                <a href="#home"> Shah. </a>
+              </div>
+              <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <ul class="menu">
+                  <li>
+                    <a href="#about" class="link cursor-hover-item">About</a>
+                  </li>
+                  <li>
+                    <a href="#work" class="link cursor-hover-item">Work</a>
+                  </li>
+                  <li>
+                    <a href="#experience" class="link cursor-hover-item"
+                      >Experience</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact" class="link cursor-hover-item"
+                      >Contact</a
+                    >
+                  </li>
+                  <li class="resume-btn" class="link">
+                    <a
+                      href="./assets/s-resume.pdf"
+                      class="cursor-hover-item"
+                      download
+                      >Resume</a
+                    >
+                  </li>
+                </ul>
               </ul>
+            </nav>
+          </header>
+          <div
+            orientation="left"
+            class="side__StyledSideElement-sc-1duznzb-0 left-nav"
+          >
+            <ul class="social__StyledSocialList-anu6nt-0 left-nav-links">
+              <li>
+                <a
+                  href="https://github.com/ShaharyarNasir"
+                  aria-label="GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-github"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/mshaharyarnasir"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-instagram"
+                  >
+                    <title>Instagram</title>
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/mshaharyarnasir"
+                  aria-label="Twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-twitter"
+                  >
+                    <title>Twitter</title>
+                    <path
+                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mshaharyarnasir"
+                  aria-label="Linkedin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-linkedin"
+                  >
+                    <title>LinkedIn</title>
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    ></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://codepen.io/mshaharyarnasir"
+                  aria-label="Codepen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-codepen"
+                  >
+                    <title>CodePen</title>
+                    <polygon
+                      points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
+                    ></polygon>
+                    <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                    <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                    <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                    <line x1="12" y1="2" x2="12" y2="8.5"></line></svg
+                ></a>
+              </li>
             </ul>
-          </nav>
-        </header>
+          </div>
+          <div
+            orientation="right"
+            class="side__StyledSideElement-sc-1duznzb-0 right-nav"
+          >
+            <div class="email__StyledLinkWrapper-sc-2epoq-0 right-nav-links">
+              <a
+                href="mailto:m.shaharyarNasir@gmail.com"
+                rel="noopener noreferrer"
+                target="_blank"
+                >m.shaharyarNasir@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
 
         <section id="home" class="home home-modifier">
           <div>
             <div>
-              <p class="home__intro cursor-hover-item">Hey!</p>
+              <p class="home__intro cursor-hover-item">Hey! I'm</p>
             </div>
             <div>
               <h1 class="title">M. Shaharyar Nasir</h1>
@@ -169,11 +391,11 @@
                 <div class="project__img">
                   <div class="wrapper">
                     <a
-                      href="https://keith-oliver.vercel.app/"
+                      href="https://noblecanni.com"
                       class="link cursor-hover-item"
                       ><img
                         class="img cursor-hover-item"
-                        src="./assets/Keith-Oliver.png"
+                        src="./assets/Noble-Canni.png"
                         alt=""
                         class="Project__thumbnail"
                     /></a>
@@ -182,27 +404,25 @@
                 <div class="poject__text">
                   <p class="project__type">Featured project</p>
                   <h3 class="project__title cursor-hover-item">
-                    <a href="https://keith-oliver.vercel.app/">
-                      Keith Project</a
-                    >
+                    <a href="https://noblecanni.com"> Noble Canni</a>
                   </h3>
                   <div class="project__summary">
                     <p class="project__summary__text">
-                      A Logistics consultant website with Wordpress and
-                      Elementor, the
+                      A US based company deals in medical and fitness products.
+                      The
                       <a
-                        href="https://keith-oliver.vercel.app/"
+                        href="https://noblecanni.com"
                         class="link cursor-hover-item"
-                        >Keith Oliver</a
+                        >Noble Canni</a
                       >
                       .
                     </p>
                   </div>
                   <ul class="project__tools">
-                    <li class="tool">Vs code</li>
-                    <li class="tool">Wordpress</li>
                     <li class="tool">Elementor</li>
+                    <li class="tool">Wordpress</li>
                     <li class="tool">PHP</li>
+                    <li class="tool">SQL</li>
                     <!-- <li class="tool">React</li> -->
                   </ul>
                   <div class="project-links">
@@ -357,43 +577,51 @@
               <div class="project project-modifier">
                 <div class="project__img">
                   <div class="wrapper">
-                    <img
-                      class="img cursor-hover-item"
-                      src="./assets/img-1.jfif"
-                      alt=""
-                      class="Project__thumbnail"
-                    />
+                    <a
+                      href="https://keith-oliver.vercel.app/"
+                      class="link cursor-hover-item"
+                      ><img
+                        class="img cursor-hover-item"
+                        src="./assets/Keith-Oliver.png"
+                        alt=""
+                        class="Project__thumbnail"
+                    /></a>
                   </div>
                 </div>
                 <div class="poject__text">
                   <p class="project__type">Featured project</p>
                   <h3 class="project__title cursor-hover-item">
-                    <a href="">Project one</a>
+                    <a href="https://keith-oliver.vercel.app/">
+                      Keith Project</a
+                    >
                   </h3>
                   <div class="project__summary">
                     <p class="project__summary__text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Sunt sed molestias voluptatum
-                      <a href="" class="link cursor-hover-item">laudantium</a>
+                      A Logistics consultant website with Wordpress and
+                      Elementor, the
+                      <a
+                        href="https://keith-oliver.vercel.app/"
+                        class="link cursor-hover-item"
+                        >Keith Oliver</a
+                      >
                       .
                     </p>
                   </div>
                   <ul class="project__tools">
                     <li class="tool">Vs code</li>
-                    <li class="tool">Code</li>
-                    <li class="tool">Word</li>
-                    <li class="tool">Excell</li>
-                    <li class="tool">React</li>
+                    <li class="tool">Wordpress</li>
+                    <li class="tool">Elementor</li>
+                    <li class="tool">PHP</li>
+                    <!-- <li class="tool">React</li> -->
                   </ul>
                   <div class="project-links">
                     <a
                       href="#"
-                      aria-label="GitHub  "
+                      aria-label="GitHub"
                       target="_blank"
                       rel="noopener noreferrer"
                       class="cursor-hover-item"
-                    >
-                      <svg
+                      ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         role="img"
                         viewBox="0 0 24 24"
@@ -412,7 +640,7 @@
                     </a>
                     <a
                       href="#"
-                      aria-label="External  "
+                      aria-label="External"
                       class="external"
                       target="_blank"
                       rel="noopener noreferrer"
