@@ -2,8 +2,6 @@
   /* --bg-color-dark: rgb(47, 46, 65);
   --bg-color-dark-trans: rgb(47, 46, 65, 0.85); */
 
-  --bg-dark: rgb(18, 17, 24);
-  --bg-dark-trans: rgb(18, 17, 24, 0.85);
   /* --dark-slate-bg: rgb(53, 35, 146); */
   --dark-slate-bg: #39358c;
   --slate: #8892b0;
@@ -64,7 +62,6 @@ body {
   width: 100%;
   min-height: 100%;
   height: 100%;
-  background-color: var(--bg-dark);
   font-family: var(--font-sans);
   cursor: none;
   overflow-x: hidden;
@@ -915,7 +912,6 @@ ul {
   transition: var(--transition);
 }
 .other-project_indiv .project-inner {
-  box-shadow: 0 10px 30px -15px var(--color-900);
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -1003,7 +999,7 @@ svg,
 }
 .other-project_indiv:hover,
 .other-project_indiv:focus {
-  box-shadow: 0 7px 20px -3px var(--navy-shadow);
+  box-shadow: 0 10px 30px -15px var(--color-900);
 }
 
 .other-project_indiv .project-tech-list {
